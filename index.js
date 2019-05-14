@@ -8,10 +8,7 @@ module.exports = {
   displayName: 'Raiden Network',
   name: 'raiden',
   repository: 'https://github.com/raiden-network/raiden',
-  binaryName:
-    process.platform === 'win32'
-      ? 'raiden-v0.100.3-rc4-macOS-x86_64.exe'
-      : 'raiden-v0.100.3-rc4-macOS-x86_64',
+  // binaryName: `raiden-v0.100.3-rc4-${platform}-x86_64`,
   prefix: `${platform}`,
   onInputRequested: (log, stdin) => {
     const acceptTerms =
